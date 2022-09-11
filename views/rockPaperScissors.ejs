@@ -3,4 +3,22 @@
 <h1>Rock, Paper, Scissors</h1>
 <a href="/">Home</a>
 
+<div class="userMoves">
+    <div class="move-item">
+        <label for="Rock">Rock</label>
+        <input type="radio" name="userMove" value="Rock">
+    </div>
+    <div class="move-item">
+        <label for="Paper">Paper</label>
+        <input type="radio" name="userMove" value="Paper">
+    </div>
+    <div class="move-item">
+        <label for="Scissors">Scissors</label>
+        <input type="radio" name="userMove" value="Scissors">
+    </div>
+    <button class="move-btn" onclick="startGame()">Start</button>
+</div>
+
+
+<script src="rockPaperScisssors.js"></script>
 <%- include("footer.ejs") %>

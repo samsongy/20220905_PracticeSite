@@ -38,3 +38,15 @@ a {
     flex: 25%;
 }
 
+.userMoves {
+    position: relative;
+    top: 50px;
+}
+
+.move-item {
+    padding-top: 20px;
+}
+
+.move-btn {
+    margin-top: 20px;
+}
