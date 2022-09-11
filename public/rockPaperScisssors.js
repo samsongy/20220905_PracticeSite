@@ -3,6 +3,8 @@ function startGame() {
     console.log("User's move: " + userMove);
     let compMove = getCompMove();
     console.log("Computer's move: " + compMove);
+    let result = gameLogic(userMove, compMove)
+    console.log("Result: " + result)
 }
 
 function getUserMove() {
@@ -27,4 +29,27 @@ function getCompMove() {
         move="Scissors";
     }
     return move;
+}
+
+function gameLogic(userMove, compMove) {
+    let result = "";
+    //tie
+    if(userMove==compMove) {
+        result = "Tie";
+    //wins
+    } else if(userMove=="Rock" && compMove=="Scissors"){
+        result = "Win";
+    } else if(userMove=="Paper" && compMove=="Rock"){
+        result = "Win";
+    } else if(userMove=="Scissors" && compMove=="Paper"){
+        result = "Win";
+    //loses
+    } else if(userMove=="Rock" && compMove=="Paper"){
+        result = "Loss";
+    } else if(userMove=="Paper" && compMove=="Scissors"){
+        result = "Loss";
+    } else if(userMove=="Scissors" && compMove=="Rock"){
+        result = "Loss";
+    }
+    return result;
 }
