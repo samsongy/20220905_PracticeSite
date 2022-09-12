@@ -50,3 +50,21 @@ a {
 .move-btn {
     margin-top: 20px;
 }
+
+.computerMove-container {
+    position: relative;
+    top: 100px;
+}
+
+.compMove-item {
+    display: inline;
+}
+
+.result-container {
+    position: relative;
+    top: 100px;
+}
+
+.result-item {
+    display: inline;
+}

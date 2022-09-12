@@ -3,8 +3,10 @@ function startGame() {
     console.log("User's move: " + userMove);
     let compMove = getCompMove();
     console.log("Computer's move: " + compMove);
-    let result = gameLogic(userMove, compMove)
-    console.log("Result: " + result)
+    let result = gameLogic(userMove, compMove);
+    console.log("Result: " + result);
+    document.getElementById("compMove").innerHTML=compMove;
+    document.getElementById("result").innerHTML=result;
 }
 
 function getUserMove() {
